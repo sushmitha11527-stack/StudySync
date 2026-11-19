@@ -1,3 +1,17 @@
+
+name: StudySync CI CD
+
+'on':
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
 jobs:
   ci:
     name: CI - Build and Test
